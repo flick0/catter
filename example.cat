@@ -1,0 +1,30 @@
+{
+    "name":"alacritty",
+
+    "source":"https://github.com/catppuccin/alacritty",
+
+    "destination":"~/.config/alacritty/alacritty.yml",
+
+    "comment_char":"#",
+
+    "use":{
+        "catppuccin.yml":{
+            "use_all":true,
+            "suffix":{
+                "data":"colors: *{CAT::THEME}"
+            }
+        }
+        
+    },
+
+    "apply":{
+        "append":true,
+        "clean_before_append":true,
+        "trim":true,
+        "ignore_whitespace":{
+            "tabs":true,
+            "spaces":true,
+            "newlines":true
+        }
+    }
+}

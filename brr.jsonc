@@ -1,0 +1,60 @@
+{
+    "name":"alacritty",
+
+    "description":"soothing pastel theme for alacritty",
+
+    "source":"https://github.com/catppuccin/alacritty",
+
+    "destination":"~/.config/alacritty/alacritty.yml",
+
+    "use":{
+        "catppuccin.yml":{
+            "use_all":true
+                        // "prefix":{
+            //     "from":"color_schemes:",
+            //     "till":"\\s*(mocha|macchiato|frappe|latte):"
+            // },
+            // "mocha":{
+            //     "from":"mocha: &mocha",
+            //     "till":"{CAT::RE::\\s*(mocha|macchiato|frappe|latte):}"
+            // },
+            // "macchiato":{
+            //     "from":"macchiato: &macchiato",
+            //     "till":"{CAT::RE::\\s*(mocha|macchiato|frappe|latte):}"
+            // },
+            // "frappe":{
+            //     "data":"",
+            //     "from":"frappe: &frappe",
+            //     "till":"{CAT::RE::\\s*(mocha|macchiato|frappe|latte):}",
+            //     "save_to":""
+            // },
+            // "latte":{
+            //     "data":"",
+            //     "from":"latte: &latte",
+            //     "till":"{CAT::RE::\\s*(mocha|macchiato|frappe|latte):}",
+            //     "save_to":""
+            // },
+            // "suffix":{
+            //     "data":"",
+            //     "from":"colors: *{CAT::THEME}",
+            //     "to":"{CAT::SELF::LINE::-1}"
+            // },
+            // "separator":{
+            //     "data":"\n",
+            //     "from":"",
+            //     "to":""
+            // }
+        }
+    },
+
+    "apply":{
+        "append":true,
+        "clean_before_append":true,
+        "trim":true,
+        "ignore_whitespace":{
+            "tabs":true,
+            "spaces":true,
+            "newlines":true
+        }
+    }
+}
